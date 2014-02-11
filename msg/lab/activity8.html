@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Making a Drop Down Menu</title>
+<style>
+	*{
+	padding:0px;
+	margin:0px;
+	}
+	body{
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		padding::50px;
+		background:#ABC;
+		margin:50px;
+	}
+	h2{
+		text-align:center;
+		border-bottom:2px solid blue;
+		margin-bottom:50px;
+		margin-top:100px;
+	}
+	ul#mainUl,ul.subMenu,ul.subSubMenu{
+		list-style-type:none;
+	}
+    
+    #mainNav li{
+		
+		width:125px;
+		text-align:center;
+		position:relative;
+		float:left;
+		
+	}
+	ul#mainUl a{
+	text-decoration:none;
+	display:block;
+	height:25px;
+	width:125px;
+	line-height:25px;
+	background-color:gray;
+	border:1px solid black;
+	border-radius: 5px;
+	margin-right:5px;
+	margin-top:3px;
+	}
+	ul.subSubMenu{
+	position:relative;
+	top:-26px;
+	left:127px;
+	}
+	ul#mainUl ul{
+		display:none;
+	}
+	ul#mainUl li:hover a:hover{
+	background-color:#FFFF99;
+	}
+	ul#mainUl li:hover > a{
+		background-color:#CFC;
+	}
+	
+	ul#mainUl li:hover > ul.subMenu{
+	display:block;
+	}
+	ul#mainUl li:hover > ul.subSubMenu{
+	display:block;
+	}
+	
+</style>
+</head>
+<body>
+	
+		<h2>Horizontal Navigation Menu</h2>
+		<nav id="mainNav">
+			<ul id="mainUl">
+				<li><a href="#">hyperlink-1</a></li>
+				<li><a href="#">hyperlink-2</a>
+					<ul class="subMenu">
+						<li><a href="#">hyperlink-2.1</a></li>
+						<li><a href="#">hyperlink-2.2</a></li>
+						<li><a href="#">hyperlink-2.3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">hyperlink-3</a></li>
+				<li><a href="#">hyperlink-4</a>
+					<ul class="subMenu">
+						<li><a href="#">hyperlink-4.1</a></li>
+						<li><a href="#">hyperlink-4.2</a></li>
+						<li><a href="#">hyperlink-4.3</a>
+							<ul class="subSubMenu">
+								<li><a href="#">hyperlink-4.3.1</a></li>
+								<li><a href="#">hyperlink-4.3.2</a></li>
+								<li><a href="#">hyperlink-4.3.3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">hyperlink-5</a>
+			</ul>
+		</nav>
+	
+</body>
+
+</html>

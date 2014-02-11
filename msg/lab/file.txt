@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="menu-wrapper">
+	<div id="menu">
+		<ul>
+			<li><a href="faculty.php">Homepage</a></li>
+			
+			<li><a href="#">About</a></li>
+			<li><a href="#">Forum</a></li>
+			<li><a href="operation.php">Operation</a></li>
+			<li><a href="#">Online quiz</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="index.html">Logout</a></li>
+			
+		</ul>
+	</div>
+</div>
+<div id="header-wrapper">
+	
+		<div id="logo">
+			<h1>CSEWD <span>Schools</span></h1>
+			<p>an initiative to education</p>
+		</div>
+	
+</div>
+<div id="wrapper">
+	<!-- end #header -->
+	<div id="content">
+					<div class="post">
+						<h2 class="title">Welcome to CSEWD Schools</h2>
+						
+						
+						<div class="entry">
+							Welcome to CSEWD Schools, the ultimate source for free web tutorials organized in an orderly fashion in the website. If you have any request for additional materials, feel free to contact me.
+
+						</div>
+					</div>
+					
+					<div style="clear: both;">&nbsp;
+					  <form action="rss-feed.php" method="post">
+						<select name="RSS-FEED">
+							<option value="" selected="selected">Select an RSS-feed:</option>
+							<option value="Google">Google News</option>
+							<option value="MSNBC">MSNBC News</option>
+						</select>
+					  </form>
+					  <br />
+					  <div id="rssOutput">RSS-feed will be listed here...</div>
+					</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<ul>
+						<li>
+							<h2>Search Here:</h2>
+							<div>
+								<form>
+									<input type="text" width="320px" height="60px" onkeyup="showResult(this.value)" />
+									<div id="livesearch"></div>
+								</form>
+							</div>
+							<div style="clear: both;">&nbsp;</div>
+						</li>
+					
+						<li>
+							<h2>Categories</h2>
+							<ul>
+								<li><a href="html.php">HTML</a></li>
+								<li><a href="css.php">CSS</a></li>
+								<li><a href="javas.php">Javascript</a></li>
+								<li><a href="php.php">PHP</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>Copyright (c) 2012 CSEWD Schools.com. All rights reserved.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
